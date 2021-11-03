@@ -1,28 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-/* ROOT VARIABLES */
+/*  ------------------------------------------------ROOT VARIABLES  ------------------------------------------------*/
 
 :root {
-  --hoverstateBtn: ;
   --hoverstatenav: #f4f4f4;
   --bodybackground: #ffffff;
-
   --voilet: #55198b;
-  --box-design: rgba(109, 40, 217, 0.1);
+  --box-design: rgba(109, 40, 217, 0.1); /* #6d28d9 */
   --box-design-hover: rgba(88, 17, 202, 0.1);
-
   --headerbar-bg: #fff;
   --headings: #000000;
   --para-clr: #868e96;
-  --heading-fs : 4rem;
-  --para-fs : 2.5rem;
-
+  --heading-fs: 5.6rem;
+  --para-fs: 2.5rem;
   --font-nav: "Montserrat", sans-serif;
 }
 
-
-
-/* GENERAL STYLING  */
+/* ------------------------------------------------ GENERAL STYLING  ------------------------------------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +46,10 @@ body {
   font-family: var(--font-nav);
 }
 
+body.dark .section {
+  background-color: #151515;
+}
+
 /* For scroll stylings */
 html::-webkit-scrollbar {
   width: 0.6rem;
@@ -60,10 +58,9 @@ html::-webkit-scrollbar-track {
   background: var(--voilet);
 }
 html::-webkit-scrollbar-thumb {
-  /* background: #420177; */
 }
 
-/* HEADER BAR STARTS*/
+/* ------------------------------------------------HEADER BAR STARTS ------------------------------------------------*/
 header {
   position: fixed;
   top: 0;
@@ -78,7 +75,6 @@ header {
   background-color: var(--headerbar-bg);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
-
 header .logo {
   font-size: 2rem;
   font-weight: 800;
@@ -118,19 +114,18 @@ header .navbar ul li a:hover {
   background-color: var(--voilet);
   border: 1px solid var(--voilet);
 }
-/* HEADER BAR ENDS*/
+/*  ------------------------------------------------HEADER BAR ENDS* ------------------------------------------------/
 
-/* MAIN SECTION STARTS */
-
+/*  ------------------------------------------------MAIN SECTION STARTS ------------------------------------------------ */
 .home,
-.skills {
+.skills,
+.exp-sec-wrapper {
   margin-top: 24rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: center;
 }
-
 .home #particles-js {
   position: absolute;
   top: 0;
@@ -138,7 +133,6 @@ header .navbar ul li a:hover {
   height: 100%;
   width: 100%;
 }
-
 .home::before {
   content: "";
   position: absolute;
@@ -157,7 +151,7 @@ header .navbar ul li a:hover {
 }
 
 .home .content h3 {
-  font-size: 5rem;
+  font-size: var(--heading-fs);
   font-weight: 800;
   color: var(--font-root);
 }
@@ -197,17 +191,19 @@ header .navbar ul li a:hover {
 
 /* MAIN IMG  */
 .home .image,
-.skills .image {
+.skills .image,
+.exp-sec-wrapper .image {
   flex: 1 1 40rem;
   z-index: 1;
 }
 
 .home .image img,
-.skills .image img {
+.skills .image img,
+.exp-sec-wrapper .image img {
   width: 80%;
   margin-left: 6rem;
 }
-/* MAIN SECTION ENDS */
+/*  ------------------------------------------------MAIN SECTION ENDS  ------------------------------------------------*/
 
 /* SOCIAL ICON STARTS*/
 .socials {
@@ -232,7 +228,7 @@ header .navbar ul li a:hover {
 }
 /* SOCIAL ICONS ENDS  */
 
-/* SKILL SECTION STARTS*/
+/*  ------------------------------------------------SKILL SECTION STARTS ------------------------------------------------*/
 
 .skills .content-skills .box-design {
   position: absolute;
@@ -279,98 +275,86 @@ header .navbar ul li a:hover {
   color: var(--para-clr);
   padding: 1rem;
   margin-bottom: 0;
- 
 }
 
-/* SKILL SECTION ENDS*/
+/*  ------------------------------------------------SKILL SECTION ENDS ------------------------------------------------*/
 
-/* EDUCATION SECTION STARTS */
-.education ,
+/* ------------------------------------------------ EDUCATION SECTION STARTS  ------------------------------------------------*/
+.education,
 .experience,
 .projects,
 .contact {
   margin: 20rem 0rem 0rem 12rem;
 }
+.education {
+  margin-bottom: 12rem;
+}
 
-.education .edu-box {
+.edu-center {
+  margin-left: 8rem;
+}
+.edu-details {
+  margin-bottom: 3rem;
+}
+.edu-center .edu-details h2 {
+  font-size: 28px;
+  text-overflow: ellipsis;
+}
+.edu-center .edu-details h5 {
+  font-size: 1.5rem;
+}
+.edu-center .edu-details p {
+  font-size: 1.2rem;
+}
+
+.border-animation {
+  height: 30px;
+  width: 60%;
+  border-top: 2px solid hsla(0, 0%, 82.7%, 0.397);
+  margin-bottom: 20px;
+  transition: width 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.border-animation:hover {
+  width: 80%;
+  border-top: 2px solid var(--voilet);
+}
+
+/*  ------------------------------------------------EDUCATION SECTION ENDS  ------------------------------------------------*/
+
+
+
+/* ------------------------------------------------ PROJECTS SECTION STARTS ------------------------------------------------ */
+.projects .projects-card-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
-.education .edu-box .schooling-box,
-.education .edu-box .collage-box{
-  width: 40%;
-  height: 325px;
-}
-.education .edu-box .schooling-box .heading-box ,
-.education .edu-box .collage-box .heading-box {
-  background-color: var(--voilet);
-  color: var(--bodybackground);
-  border-radius: 1.4rem;
+.pr-card-one,
+.pr-card-two,
+.pr-card-three {
+  background-color: var(--box-design);
+  height: 320px;
+  width: 360px;
+  margin: 1rem;
+  border-radius: 8px;
 }
 
-.education .edu-box .schooling-box .school-heading,
-.education .edu-box .collage-box .clg-heading {
-  font-size: 2rem;
-  font-weight: 900;
-  padding: 2rem;
-  text-align: center;
+.pr-card-content .project-title {
+  padding: 3rem 4rem 2rem 4rem;
 }
-.education .edu-box .schooling-box .schl-content,
-.education .edu-box .collage-box .clg-content {
-  color: var(--para-clr);
-  font-size: 2rem;
-  padding: 1.8rem;
-
+.pr-card-content .project-title p {
+  font-style: italic;
 }
-.education .edu-box .schooling-box .schl-content>h2,
-.education .edu-box .collage-box .clg-content>h2 {
-  color: var(--headings);
-}
-.education .edu-box .schooling-box .schl-content article > p,
-.education .edu-box .collage-box .clg-content article > p {
-  font-size: 1.4rem;
+.pr-card-content .project-details {
+  padding: 0rem 4rem 2rem 4rem;
+  font-size: 1.2rem;
 }
 
-
-
-/* EDUCATION SECTION ENDS */
-
-/* WORK EXPERIENCE STARTS */
-
-.experience ul.timeline {
-  list-style-type: none;
-  position: relative;
-}
-ul.timeline:before {
-  content: ' ';
-  background: #d4d9df;
-  display: inline-block;
-  position: absolute;
-  left: 29px;
-  width: 2px;
-  height: 100%;
-  z-index: 400;
-}
-ul.timeline > li {
-  margin: 20px 0;
-  padding-left: 20px;
-}
-ul.timeline > li:before {
-  content: ' ';
-  background: white;
-  display: inline-block;
-  position: absolute;
-  border-radius: 50%;
-  border: 3px solid #22c0e8;
-  left: 20px;
-  width: 20px;
-  height: 20px;
-  z-index: 400;
-}
+/*  ------------------------------------------------PROJECTS SECTION ENDS  ------------------------------------------------*/
 
 
 /* HAMBURGER ICON STARTS */
@@ -419,55 +403,6 @@ ul.timeline > li:before {
     transform: rotate(0deg);
   }
 }
-/* FOR HAND WAVE ANIMATION ENDS */
+/*  ------------------------------------------------FOR HAND WAVE ANIMATION ENDS  ------------------------------------------------*/
 
-/* MEDIA QUIERIS */
 
-/* SIDEBAR 
-If the screen lies insie 768 resolution apply this styles */
-@media (max-width: 768px) {
-  #menu {
-    display: block;
-  }
-  header .navbar {
-    position: fixed;
-    top: 6.5rem;
-    right: -120%;
-    width: 75%;
-    height: 100%;
-    text-align: left;
-    align-items: flex-start;
-    background-color: #0e0f31;
-  }
-  header .navbar ul {
-    flex-flow: column;
-    padding: 1rem;
-  }
-  header .navbar ul li {
-    text-align: center;
-    width: 100%;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    width: 26rem;
-  }
-  header .navbar ul li a {
-    display: block;
-    padding: 1rem;
-    text-align: left;
-    color: #fff;
-    font-size: 2rem;
-  }
-  header .navbar ul li a.active,
-  header .navbar ul li a:hover {
-    padding: 1rem;
-    color: #fff;
-    border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #011aff;
-  }
-  .fa-times {
-    transform: rotate(180deg);
-  }
-  header .navbar.nav-toggle {
-    right: 0;
-  }
-}

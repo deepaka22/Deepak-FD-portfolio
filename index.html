@@ -11,10 +11,12 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- CUSTOM STYLINGS -->
     <link rel="stylesheet" href="index.css">
+
     <!-- FONT-AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
@@ -22,11 +24,8 @@
 
 </head>
 
-<body>
-
-
+<body class="dark">
     <!-- LOADING ICON  -->
-
 
     <!-- NAV-BAR STARTS -->
     <header>
@@ -87,14 +86,14 @@
     </section>
     <!-- MAIN SECTION ENDS -->
 
-
     <!-- SKILL AND ABOUT STARTS -->
 
     <section class="skills">
 
         <div class="content-skills">
             <!-- <div class="box-design"></div> -->
-            <h1 class="heading">What I'm about <img src="./assets/images/dec-sign.png" width="42" height="42" alt=""> </h1>
+            <h1 class="heading">What I'm about <img src="./assets/images/dec-sign.png" width="42" height="42" alt="">
+            </h1>
             <p>An aspiring FULL STACK DEVELOPER who wants to delve into every tech stack.</p>
             <p>Develop highly interactive Front end / User Interfaces for your web and mobile applications.</p>
             <p>Progressive Web Applications ( PWA ) in normal and SPA Stacks.</p>
@@ -217,99 +216,111 @@
 
     <!-- SKILLS AND ABOUT  ENDS -->
 
-     <!-- WORK EXPERIENCE STARTS -->
-     <section class="experience">
-        <h2 class="heading">Work Experience <img src="./assets/images/user-lap.png" width="42" height="42" alt=""></h2>
-
-        <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <ul class="timeline">
-                        <li>
-                            <a target="_blank" href="https://www.totoprayogo.com/#">Provility Software Solution Pvt.Ltd</a>
-                            <a href="#" class="float-right">21 March, 2014</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                        </li>
-                        <li>
-                            <a href="#">Livspace.com</a>
-                            <a href="#" class="float-right">4 March, 2014</a>
-                            <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
-                        </li>
-                        <li>
-                            <a href="#">Livspace.com</a>
-                            <a href="#" class="float-right">1 April, 2014</a>
-                            <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- WORK EXPERIENCE ENDS -->
-
 
     <!-- PROJECT SECTION STARTS -->
 
     <section class="projects">
         <h2 class="heading">Projects</h2>
+        <div class="projects-card-wrapper">
+
+            <div class="pr-card-one">
+                <div class="pr-card-content">
+                    <div class="project-title">
+                        <h2>InfoShip</h2>
+                        <p>Crew Agency Hub</p>
+                    </div>
+                    <div class="project-details">
+                        <p>Tech Stack - Angular 10 , PrimeNg.</p>
+                        <p>Used these stack to build the state of art application.</p>
+                        <p>Involved in Designing , Development phases Of Front-End.</p>
+                        <p>Wrting Test cases and Bug reporting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pr-card-two">
+                <div class="pr-card-content">
+                    <div class="project-title">
+                        <h2>Unwire</h2>
+                        <p>Travel Tool Website</p>
+                    </div>
+                    <div class="project-details">
+                        <p>Tech Stack - Angular 10 , Bootstrap , Leaflet Map.</p>
+                        <p>Used these stack to build the state of art application.</p>
+                        <p>Involved in Designing , Development phases Of Front-End.</p>
+                        <p>Integrating the realtime API which is provided by the UNWIRE Backend Team.</p>
+                        <p>Wrting Test cases and Bug reporting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pr-card-three">
+                <div class="pr-card-content">
+                    <div class="project-title">
+                        <h2>DDS Wireless</h2>
+                        <p>Taxi Book Cloud</p>
+                    </div>
+                    <div class="project-details">
+                        <p>Tech Stack - EmberJs , Bootstrap , TomTom Map.</p>
+                        <p>Used these stack to build the state of art application.</p>
+                        <p>Involved in supporting the frontEnd team in the UI issues.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
     <!-- PROJECT SECTION ENDS -->
 
     <!-- EDUCATION STARTS -->
     <section class="education">
-        <h2 class="heading">Education <img src="./assets/images/edu_hat.png" alt=""> </h2>
-        <div class="edu-box">
+        <h2 class="heading">Education <img src="" alt=""></h2>
 
-            <div class="schooling-box shadow-sm mb-5 bg-body rounded">
-                <div class="heading-box">
-                    <h2 class="school-heading">Schooling
-                     <i class="fas fa-school"></i></h2>
-                </div>
-                <div class="schl-content ">
-                    <h2>Don Bosco Matric.Higher Secondary</h2>
-                    <article class="ms-3 p-2">
-                        <p>Done Kindergarden , Primary , Secondary. <br>year's attend 2000 - 2012</p>
-                    </article>
-                    <hr>
-                    <h2 class="mt-4">VMHSS Public School</h2>
-                    <article class="ms-3 p-2">
-                        <p>Done senior secondary Group 1. <br> years attend 2012 - 2014</p>
-                    </article>
-                </div>  
+        <div class="edu-center">
+
+            <div class="edu-details">
+                <h2>Anna University</h2>
+                <h5>Bachelor of Civil Engineering.</h5>
+                <p>2014 - 2018</p>
             </div>
 
-            <div class="collage-box shadow-sm mb-5 bg-body rounded">
-                <div class="heading-box">
-                    <h2 class="clg-heading">Under Graduate
-                    <i class="fas fa-university"></i></h2>
-                </div>
-                
-                <div class="clg-content">
-                    <h2>ANNA UNIVERSITY</h2>
-                    <article class="ms-3 p-2">
-                        <p>Bachelor of Civil Engineering. <br>2014 - 2018 </p>
-                    </article>
-                </div>
-             
+            <div class="border-animation"></div>
+
+            <div class="edu-details">
+                <h2>Vmhss Group Of Schools</h2>
+                <h5>Senior secondary Group 1 Computer-Science.</h5>
+                <p>2012 - 2014</p>
             </div>
+
+            <div class="border-animation"></div>
+
+            <div class="edu-details">
+                <h2>Don Bosco Matriculation Higher Secondary School</h2>
+                <h5>Kindergarden , Primary , Secondary.</h5>
+                <p>2000 - 2012</p>
+            </div>
+
+            <div class="border-animation"></div>
 
         </div>
+
+
+
+
     </section>
     <!-- EDUCATION ENDS -->
 
 
-    <!-- FOOTER NOTE CONTACT AREA STARTS -->
-    <!-- FOOTER NOTE CONTACT AREA ENDS -->
 
 
-
-
+   
 
     <!-- ALL LIBS CDN AND OTHER LINKS -->
 
     <!-- BOOTSTRAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js" integrity="sha512-Pv/SmxhkTB6tWGQWDa6gHgJpfBdIpyUy59QkbshS1948GRmj6WgZz18PaDMOqaEyKLRAvgil7sx/WACNGE4Txw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js"
+        integrity="sha512-Pv/SmxhkTB6tWGQWDa6gHgJpfBdIpyUy59QkbshS1948GRmj6WgZz18PaDMOqaEyKLRAvgil7sx/WACNGE4Txw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Particle links -->
     <script src="/assets/libs/particle.min.js"></script>
@@ -321,8 +332,11 @@
     <!-- Jquery  -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
+
     <!-- Custom Js -->
     <script src="/assets/libs/index.js"></script>
+
+   
 
 </body>
 
