@@ -279,6 +279,103 @@ header .navbar ul li a:hover {
 
 /*  ------------------------------------------------SKILL SECTION ENDS ------------------------------------------------*/
 
+
+
+/*  ------------------------------------------------WORK EXPERIENCE STARTS ------------------------------------------------ */
+
+.experience .wrapper {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  /* width: 50%; */
+}
+
+.exp-sec-wrapper {
+  margin-top: 0rem;
+}
+
+/* ARROW POINTER  */
+.experience .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 15px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--voilet);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--voilet) transparent transparent;
+}
+
+.experience .content {
+  background-color: var(--box-design);
+  position: relative;
+  border-radius: 6px;
+}
+.experience .content .tag {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+.experience .content .desc {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+.experience .content .desc h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.experience .content .desc p {
+  font-size: 1.2rem;
+}
+
+.experience .timeline {
+  position: relative;
+  flex: 2;
+}
+
+/* LINE  */
+.experience .timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: var(--voilet);
+  top: 16px;
+  bottom: 0;
+  margin-left: -3px;
+  z-index: -2;
+  height: 270px;
+}
+.experience .right::after {
+  left: -16px;
+}
+
+/* CIRCLE IN LINE*/
+.experience .wrapper::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid var(--voilet);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 100;
+  font-size: 1.89rem;
+  text-align: center;
+  font-weight: 600;
+  color: #02094b;
+  font-family: "Font Awesome\ 5 Free";
+}
+
+.experience .content:hover {
+  background-color: var(--voilet);
+  color: var(--hoverstatenav);
+}
+/*  ------------------------------------------------WORK EXPERIENCE ENDS  ------------------------------------------------*/
+
+
 /* ------------------------------------------------ EDUCATION SECTION STARTS  ------------------------------------------------*/
 .education,
 .experience,
