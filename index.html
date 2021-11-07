@@ -17,6 +17,8 @@
     <!-- CUSTOM STYLINGS -->
     <link rel="stylesheet" href="index.css">
 
+    <!-- THEME SWITCH STYLINGS -->
+    <link rel="stylesheet" href="switcher.css">
     <!-- FONT-AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
@@ -25,7 +27,15 @@
 </head>
 
 <body class="dark">
-    <!-- LOADING ICON  -->
+
+    <!-- PRE- LOADING ICON  -->
+    <div class="loader-container">
+        <img draggable="false" src="./assets/images/Coronavirus.gif" width="120" height="120" alt="">
+    </div>
+
+ 
+
+    <!-- LOADING ICON ENDS -->
 
     <!-- NAV-BAR STARTS -->
     <header>
@@ -80,7 +90,7 @@
 
         <!-- Left side -->
         <div class="image">
-            <img draggable="false" class="main-left-sideimg" src="./assets/images/man-siting-lap-black.svg" alt="" loading="eager">
+            <img draggable="false" class="main-left-sideimg" src="./assets/images/heroMan.svg" alt="" loading="eager">
         </div>
 
     </section>
@@ -172,6 +182,14 @@
             <article class="tech-icon">
                 <div class="icon-bg">
                     <div>
+                        <img src="./assets/tech-icons/figma.svg" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <article class="tech-icon">
+                <div class="icon-bg">
+                    <div>
                         <img src="./assets/tech-icons/node.svg" alt="">
                     </div>
                 </div>
@@ -185,7 +203,6 @@
                 </div>
             </article>
 
-
             <article class="tech-icon">
                 <div class="icon-bg">
                     <div>
@@ -197,23 +214,16 @@
             <article class="tech-icon">
                 <div class="icon-bg">
                     <div>
-                        <img src="./assets/tech-icons/yarn.svg" width="120px" alt="">
+                        <img src="./assets/tech-icons/yarn.svg" width="60" height="60" alt="">
                     </div>
                 </div>
             </article>
 
-            <article class="tech-icon">
-                <div class="icon-bg">
-                    <div>
-                        <img src="./assets/tech-icons/figma.svg" alt="">
-                    </div>
-                </div>
-            </article>
 
             <article class="tech-icon">
                 <div class="icon-bg">
                     <div>
-                        <img src="./assets/tech-icons/wordpress.svg" alt="">
+                        <img src="./assets/tech-icons/git.svg" alt="">
                     </div>
                 </div>
             </article>
@@ -225,13 +235,14 @@
                     </div>
                 </div>
             </article>
-            <article class="tech-icon">
+
+            <!-- <article class="tech-icon">
                 <div class="icon-bg">
-                    <div> 
+                    <div>
                         <img src="./assets/tech-icons/continue.png" alt="">
                     </div>
                 </div>
-            </article>
+            </article> -->
 
         </ul>
         <!-- TECH SKILLS ENDS -->
@@ -239,7 +250,6 @@
     </section>
 
     <!-- SKILLS AND ABOUT  ENDS -->
-
 
     <!-- WORK EXPERIENCE STARTS -->
     <section class="experience">
@@ -287,7 +297,7 @@
             </div>
 
             <div class="image">
-                <img draggable="false" class="main-left-sideimg" src="./assets/images/man-sitingdown-lap.svg" alt=""
+                <img draggable="false" class="main-left-sideimg" src="./assets/images/code_thinking.svg" alt=""
                     loading="eager">
             </div>
 
@@ -433,8 +443,6 @@
     <!-- FOOTER NOTE CONTACT AREA ENDS -->
 
 
-   
-
     <!-- ALL LIBS CDN AND OTHER LINKS -->
 
     <!-- BOOTSTRAP -->
@@ -456,7 +464,8 @@
     <!-- Custom Js -->
     <script src="/assets/libs/index.js"></script>
 
-   
+    <!-- Switcher -->
+    <script src="./assets/libs/switcher.js"></script>
 
 </body>
 
