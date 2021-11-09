@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="index.css">
 
     <!-- THEME SWITCH STYLINGS -->
-    <link rel="stylesheet" href="switcher.css">
+    <link rel="stylesheet" href="./assets/theme-switcher.css">
     <!-- FONT-AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
@@ -29,16 +29,13 @@
 <body class="dark">
 
     <!-- PRE- LOADING ICON  -->
-    <div class="loader-container">
+    <!-- <div class="loader-container">
         <img draggable="false" src="./assets/images/Coronavirus.gif" width="120" height="120" alt="">
-    </div>
-
- 
-
+    </div> -->
     <!-- LOADING ICON ENDS -->
 
     <!-- NAV-BAR STARTS -->
-    <header>
+    <header id="header" class="dark">
         <a href="/Portfolio-Website" class="logo"><i class="fab fa-connectdevelop"></i></i>Logo</a>
 
         <!-- Hamburger icon for mobile view -->
@@ -90,7 +87,7 @@
 
         <!-- Left side -->
         <div class="image">
-            <img draggable="false" class="main-left-sideimg" src="./assets/images/heroMan.svg" alt="" loading="eager">
+            <img draggable="false" class="main-left-sideimg" src="./assets/images/man-siting-lap-black.svg" alt="" loading="eager">
         </div>
 
     </section>
@@ -101,7 +98,7 @@
     <section class="skills">
 
         <div class="content-skills">
-            <!-- <div class="box-design"></div> -->
+           
             <h1 class="heading">What I'm about <img src="./assets/images/dec-sign.png" width="42" height="42" alt="">
             </h1>
             <p>An aspiring FULL STACK DEVELOPER who wants to delve into every tech stack.</p>
@@ -297,7 +294,7 @@
             </div>
 
             <div class="image">
-                <img draggable="false" class="main-left-sideimg" src="./assets/images/code_thinking.svg" alt=""
+                <img draggable="false" class="main-left-sideimg" src="./assets/images/man-sitingdown-lap.svg" alt=""
                     loading="eager">
             </div>
 
@@ -442,10 +439,21 @@
 
     <!-- FOOTER NOTE CONTACT AREA ENDS -->
 
+     <!-- DARK THEME SWITCHER -->
+    <div class="theme-switch">
+
+        <div class="toggle-theme-switcher"><i class="fa fa-cog fa-spin"></i></div>
+
+        <h5>Mode Switch</h5>
+
+        <label class="p-2"><input type="radio" class="mode-switch" name="body-mode" value="light" checked="true">Light</label>
+        <label class="p-2"><input type="radio" class="mode-switch" name="body-mode" value="dark">Dark</label>
+
+    </div>
 
     <!-- ALL LIBS CDN AND OTHER LINKS -->
 
-    <!-- BOOTSTRAP -->
+    <!-- Bootstrap link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js"
         integrity="sha512-Pv/SmxhkTB6tWGQWDa6gHgJpfBdIpyUy59QkbshS1948GRmj6WgZz18PaDMOqaEyKLRAvgil7sx/WACNGE4Txw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -454,18 +462,20 @@
     <script src="/assets/libs/particle.min.js"></script>
     <script src="/assets/libs/particle.js"></script>
 
-    <!-- Typed -->
+    <!-- Typed link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
-    <!-- Jquery  -->
+    <!-- Jquery link  -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
+    <!-- Scroll Animations link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- Custom Js -->
     <script src="/assets/libs/index.js"></script>
 
-    <!-- Switcher -->
-    <script src="./assets/libs/switcher.js"></script>
+    <!-- Switcher Js -->
+    <script src="./assets/libs/theme-switcher.js"></script>
 
 </body>
 
