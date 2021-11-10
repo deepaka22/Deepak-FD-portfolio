@@ -1,0 +1,90 @@
+@import "../index.css";
+
+.theme-switch .toggle-theme-switcher {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: #ffffff;
+  left: -46px;
+  top: -1px;
+  border: 1px solid var(--voilet);
+  border-right: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px 0 0 5px;
+}
+
+.theme-switch {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  z-index: 11;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid var(--voilet);
+  border-right: none;
+  border-radius: 0 0 0 5px;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.theme-switch .mode-switch {
+  vertical-align: bottom;
+  margin-right: 0.5rem;
+}
+
+.theme-switch .toggle-theme-switcher .fa {
+  font-size: 20px;
+  line-height: 43px;
+}
+
+.theme-switch h5 {
+  font-size: 16px;
+  margin-top: 0;
+  color: #302e4d;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e8dfec;
+}
+
+.theme-switch.open {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+/* ------------------------------------------------DARK THEME STYLINGS------------------------------------------------ */
+
+body.dark ,
+body.dark header ,
+body.dark .theme-switch , 
+body.dark .toggle-theme-switcher {
+  background-color: black;
+}
+
+body.dark header a ,
+body.dark header div,
+body.dark header .navbar ul a,
+body.dark section ,
+body.dark section .content p,
+body.dark section .content .typing-text,
+body.dark section.skills .content-skills p {
+  color: var(--bodybackground);
+}
+
+body.dark section.skills .tech-skills article .icon-bg  {
+  background-color: var(--bodybackground);
+  border: 5px solid var(--voilet);
+}
+
+body.dark section.experience .exp-sec-wrapper .timeline .right .content {
+  background-color: var(--bodybackground);
+  color: black;
+  border: 2px solid var(--voilet);
+}
+
+body.dark section.projects .projects-card-wrapper .cardw {
+  background-color: var(--bodybackground);
+  color: black;
+  border: 5px solid var(--voilet);
+}

@@ -59,8 +59,9 @@ html::-webkit-scrollbar-track {
   background: var(--voilet);
 }
 html::-webkit-scrollbar-thumb {
-
 }
+
+
 
 /* ------------------------------------------------HEADER BAR STARTS ------------------------------------------------*/
 header {
@@ -75,7 +76,7 @@ header {
   padding: 1.7rem 10%;
   height: 6.5rem;
   background-color: var(--headerbar-bg);
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  box-shadow: 0 1px 4px var(--voilet);
 }
 header .logo {
   font-size: 2rem;
