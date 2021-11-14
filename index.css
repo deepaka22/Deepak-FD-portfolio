@@ -519,6 +519,36 @@ header .navbar ul li a:hover {
 
 /*  ------------------------------------------------FOOTER SECTION ENDS ------------------------------------------------ */
 
+/* SCROLL STYLES */
+.scroll-top{
+  position: fixed;
+  bottom: 800px;
+  right: 3rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  background: var(--box-design);
+  color: var(--voilet);
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+}
+.scroll-top.active{
+
+  bottom: 5rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-top:hover {
+  background-color: var(--voilet);
+  color: var(--bodybackground);
+}
+
+
+
 /* HAMBURGER ICON STARTS */
 
 #menu {
@@ -590,4 +620,183 @@ header .navbar ul li a:hover {
 
 /* ------------------------------------------------------PRELOADER------------------------------------------------  */
 
+
+/*  ------------------------------------------------MEDIA QUIERIS  ------------------------------------------------*/
+
+/* SIDEBAR 
+If the screen lies inside 768 resolution apply this styles   TABLETS*/
+@media (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+  header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #0e0f31;
+  }
+  header .navbar ul {
+    flex-flow: column;
+    padding: 1rem;
+  }
+  header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    width: 26rem;
+  }
+  header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover {
+    padding: 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #011aff;
+  }
+  .fa-times {
+    transform: rotate(180deg);
+  }
+  header .navbar.nav-toggle {
+    right: 0;
+  }
+
+
+  .education, .experience, .projects, .contact {
+    margin: 6rem 0rem 0rem 12rem;
+}
+  /* SKILLS */
+
+  .skills .tech-skills {
+    margin-right: 0;
+    margin-left: 10rem;
+  }
+  .projects .projects-card-wrapper { 
+    display: block;
+  }
+  .pr-card-one , .pr-card-two , .pr-card-three {
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+  }
+  
+}
+
+
+/* ------------------------------------------------ FOR ALL MOBILE SIZE FITS ------------------------------------------------ */
+@media (max-width: 450px) {
+  /* HOME MAIN SECTION */
+  .home,
+  .skills {
+    margin-top: 10rem;
+  }
+  .home .content h3 {
+    font-size: 2rem;
+  }
+  .home .content p {
+    font-size: 1.8rem;
+  }
+  .home .btn {
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: 0.9rem 0.9rem;
+  }
+  .home .image img {
+    margin-left: 11rem;
+  }
+
+  /* ABOUT SECTIONS SKILLS */
+  .skills .content-skills , 
+  .experience,
+  .projects ,
+  .education {
+    margin-left: 5rem;
+  }
+
+  .skills .content-skills .heading,
+  .experience .heading,
+  .projects .heading,
+  .education .heading {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 3rem;
+  }
+
+  .skills .content-skills p {
+    font-size: 1.8rem;
+    margin-left: 5rem;
+  }
+  .skills .tech-skills {
+    margin-right: 0rem;
+    margin-left: 7.5rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+  }
+
+
+  /* EXPERIENCE  */
+
+  .experience , 
+  .projects ,
+  .education {
+    margin-top: 5rem;
+  }
+
+  .experience .timeline::after {
+    height: 285px;
+  }
+  .experience .exp-sec-wrapper .timeline .content {
+    width: 350px;
+  }
+  .exp-sec-wrapper .image {
+    width: 110%;
+    margin-top: 5rem;
+  }
+
+  /* PROJECTS SECTION */
+
+  .projects .projects-card-wrapper {
+    display: block;
+    margin-left: 4rem;
+  }
+
+  .projects .projects-card-wrapper .pr-card-one ,
+  .projects .projects-card-wrapper .pr-card-two{
+    margin-bottom: 3rem;
+  }
+
+  /* EDUCATION SECTION */
+
+  .education .edu-center {
+    margin-left: 3rem;
+  }
+  .edu-center .edu-details h2 {
+    font-size: 1.8rem;
+  }
+  .edu-center .edu-details h5 {
+    font-size: 1.3rem;
+  }
+  .edu-center .edu-details p {
+    font-size: 1rem;
+  }
+
+  /* FOOTER SECTION */
+
+.footer-wrapper {
+  width: 520px;
+  height: 300px;
+}
+.footer .footer-wrapper .footer-title h1 {
+  font-size: 2rem;
+}
+}
 

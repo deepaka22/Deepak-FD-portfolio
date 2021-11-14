@@ -28,6 +28,12 @@
 
 <body>
 
+      <!-- SCROOL TO TOP  -->
+     
+      <div class="scroll-top" onclick="scroller()">
+          <i class="fas fa-hand-point-up"></i>
+      </div>
+
     <!-- PRE- LOADING ICON  -->
     <div class="loader-container">
         <img draggable="false" src="./assets/images/Coronavirus.gif" width="120" height="120" alt="">
@@ -35,7 +41,7 @@
     <!-- LOADING ICON ENDS -->
 
     <!-- NAV-BAR STARTS -->
-    <header id="header" >
+    <header id="header">
         <a href="/Portfolio-Website" class="logo"><i class="fab fa-connectdevelop"></i></i>Logo</a>
 
         <!-- Hamburger icon for mobile view -->
@@ -45,8 +51,8 @@
             <ul>
                 <!-- <li><a class="active" href="#home">Home</a></li> -->
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">Work Experience</a></li>
-                <li><a href="#project">Projects</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact me</a></li>
             </ul>
@@ -61,7 +67,7 @@
         <div id="particles-js" class="dark"></div>
 
         <!-- Right side -->
-        <div class="content" >
+        <div class="content">
             <h3>Hello there,<span class="wave">👋</span> I'm Buhari.</h3>
             <p>I'm a <span class="typing-text"></span> <br> Having an experience of building
                 web applications with Javascript / Angular and some other cool libraries and frameworks.</p>
@@ -87,7 +93,8 @@
 
         <!-- Left side -->
         <div class="image">
-            <img draggable="false" class="main-left-sideimg" src="./assets/images/man-siting-lap-black.svg" alt="" loading="eager">
+            <img draggable="false" class="main-left-sideimg" src="./assets/images/man-siting-lap-black.svg" alt=""
+                loading="eager">
         </div>
 
     </section>
@@ -95,10 +102,10 @@
 
     <!-- SKILL AND ABOUT STARTS -->
 
-    <section class="skills">
+    <section class="skills" id="skills">
 
         <div class="content-skills">
-           
+
             <h1 class="heading">What I'm about <img src="./assets/images/dec-sign.png" width="42" height="42" alt="">
             </h1>
             <p>An aspiring FULL STACK DEVELOPER who wants to delve into every tech stack.</p>
@@ -249,7 +256,7 @@
     <!-- SKILLS AND ABOUT  ENDS -->
 
     <!-- WORK EXPERIENCE STARTS -->
-    <section class="experience">
+    <section class="experience" id="work-experience">
         <h2 class="heading">Work Experience <img src="./assets/images/user-lap.png" width="42" height="42" alt=""></h2>
 
         <div class="exp-sec-wrapper">
@@ -308,7 +315,7 @@
 
     <!-- PROJECT SECTION STARTS -->
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2 class="heading">Projects</h2>
         <div class="projects-card-wrapper">
 
@@ -362,7 +369,7 @@
     <!-- PROJECT SECTION ENDS -->
 
     <!-- EDUCATION STARTS -->
-    <section class="education">
+    <section class="education" id="education">
         <h2 class="heading">Education <img src="" alt=""></h2>
 
         <div class="edu-center">
@@ -402,7 +409,7 @@
 
     <!-- FOOTER NOTE CONTACT AREA STARTS -->
 
-    <section class="footer">
+    <section class="footer" id="contact">
         <div class="footer-wrapper">
 
             <div class="footer-title text-center pt-5">
@@ -439,14 +446,18 @@
 
     <!-- FOOTER NOTE CONTACT AREA ENDS -->
 
-     <!-- DARK THEME SWITCHER -->
-     <div class="theme-switch">
+  
+    
+
+    <!-- DARK THEME SWITCHER -->
+    <div class="theme-switch">
         <div class="toggle-theme-switcher"><i class="fa fa-cog fa-spin"></i></div>
         <h5>Mode Switch</h5>
-        <label class="p-2"><input type="radio" class="mode-switch" name="body-mode" value="light" checked="true">Light</label>
+        <label class="p-2"><input type="radio" class="mode-switch" name="body-mode" value="light"
+                checked="true">Light</label>
         <label class="p-2"><input type="radio" class="mode-switch" name="body-mode" value="dark">Dark</label>
     </div>
-   
+
     <!-- ALL LIBS CDN AND OTHER LINKS -->
 
     <!-- Bootstrap link -->
@@ -462,9 +473,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
     <!-- Jquery link  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Scroll Animations link -->
+    <!-- Scroll Page Animations link -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- Custom Js -->
