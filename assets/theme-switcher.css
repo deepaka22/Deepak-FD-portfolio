@@ -64,6 +64,7 @@ body.dark .toggle-theme-switcher {
 
 body.dark header a ,
 body.dark header div,
+body.dark header #menu,
 body.dark header .navbar ul a,
 body.dark section ,
 body.dark section .content p,
@@ -87,4 +88,14 @@ body.dark section.projects .projects-card-wrapper .cardw {
   background-color: var(--bodybackground);
   color: black;
   border: 5px solid var(--voilet);
+}
+
+body.dark .theme-switch .toggle-theme-switcher,
+body.dark .theme-switch h5 {
+  color: var(--bodybackground);
+  border: none;
+}
+body.dark .theme-switch.open{
+  color: var(--bodybackground);
+  border: 1px solid var(--bodybackground);
 }

@@ -600,7 +600,6 @@ header .navbar ul li a:hover {
 
 
 /* ------------------------------------------------------PRELOADER------------------------------------------------  */
-
 .loader-container{
   position: fixed;
   top: 0; left: 0;
@@ -615,9 +614,6 @@ header .navbar ul li a:hover {
 .loader-container.fade-out{
   top: -120%;
 }
-
-
-
 /* ------------------------------------------------------PRELOADER------------------------------------------------  */
 
 
@@ -637,7 +633,7 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #0e0f31;
+    background-color: var(--voilet);
   }
   header .navbar ul {
     flex-flow: column;
@@ -654,7 +650,7 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
     display: block;
     padding: 1rem;
     text-align: left;
-    color: #fff;
+    color: var(--bodybackground);
     font-size: 2rem;
   }
   header .navbar ul li a.active,
@@ -662,7 +658,7 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
     padding: 1rem;
     color: #fff;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #011aff;
+    border-bottom: 0.5rem solid var(--bodybackground);
   }
   .fa-times {
     transform: rotate(180deg);
@@ -770,8 +766,10 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
   }
 
   .projects .projects-card-wrapper .pr-card-one ,
-  .projects .projects-card-wrapper .pr-card-two{
+  .projects .projects-card-wrapper .pr-card-two ,
+  .projects .projects-card-wrapper .pr-card-three {
     margin-bottom: 3rem;
+    margin-left: 0rem;
   }
 
   /* EDUCATION SECTION */
