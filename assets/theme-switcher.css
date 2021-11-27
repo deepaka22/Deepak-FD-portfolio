@@ -68,6 +68,7 @@ body.dark header #menu,
 body.dark header .navbar ul a,
 body.dark section ,
 body.dark section .content p,
+body.dark .scroll-top.active,
 body.dark section .content .typing-text,
 body.dark section.skills .content-skills p {
   color: var(--bodybackground);

@@ -47,6 +47,10 @@ function fadeOut() {
 
 window.onload = fadeOut; // Browser will call
 
+function refreshPage(){
+  window.location.reload();
+} 
+
 // Scroll Animations
 const scrlAnime = ScrollReveal({
   origin: "left",
