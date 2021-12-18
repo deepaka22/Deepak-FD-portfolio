@@ -850,4 +850,9 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
   }
 }
 
+@media (max-width: 400px) {
+  .footer-wrapper {
+    width: 500px;
+  }
+}
 
