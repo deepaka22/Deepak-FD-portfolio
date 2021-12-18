@@ -61,9 +61,12 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
 }
 
-
-
 /* ------------------------------------------------HEADER BAR STARTS ------------------------------------------------*/
+
+section {
+  /* min-height: 100vh; */
+}
+
 header {
   position: fixed;
   top: 0;
@@ -321,7 +324,6 @@ header .navbar ul li a:hover {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  /* width: 50%; */
 }
 
 .exp-sec-wrapper {
@@ -441,10 +443,13 @@ header .navbar ul li a:hover {
 /*  ------------------------------------------------PROJECTS SECTION ENDS  ------------------------------------------------*/
 
 /*  ------------------------------------------------FOOTER SECTION STARTS ------------------------------------------------ */
-.footer-wrapper {
-  background-color: var(--box-design);
+.footer , #contact {
   width: 100vw;
   height: 320px;
+}
+
+.footer-wrapper {
+  background-color: var(--box-design);
   border-top: 4px solid var(--box-design);
 }
 .footer-wrapper:hover {
@@ -509,7 +514,7 @@ header .navbar ul li a:hover {
 /*  ------------------------------------------------FOOTER SECTION ENDS ------------------------------------------------ */
 
 /* SCROLL STYLES */
-.scroll-top{
+.scroll-top {
   position: fixed;
   bottom: 800px;
   right: 3rem;
@@ -524,8 +529,7 @@ header .navbar ul li a:hover {
   visibility: hidden;
   opacity: 0;
 }
-.scroll-top.active{
-
+.scroll-top.active {
   bottom: 5rem;
   visibility: visible;
   opacity: 1;
@@ -535,8 +539,6 @@ header .navbar ul li a:hover {
   background-color: var(--voilet);
   color: var(--bodybackground);
 }
-
-
 
 /* HAMBURGER ICON STARTS */
 
@@ -587,11 +589,11 @@ header .navbar ul li a:hover {
 
 /*  ------------------------------------------------FOR HAND WAVE ANIMATION ENDS  ------------------------------------------------*/
 
-
 /* ------------------------------------------------------PRELOADER------------------------------------------------  */
-.loader-container{
+.loader-container {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   z-index: 10000;
   background: var(--bodybackground);
   display: flex;
@@ -600,11 +602,10 @@ header .navbar ul li a:hover {
   height: 100%;
   width: 100%;
 }
-.loader-container.fade-out{
+.loader-container.fade-out {
   top: -120%;
 }
 /* ------------------------------------------------------PRELOADER------------------------------------------------  */
-
 
 /*  ------------------------------------------------MEDIA QUIERIS  ------------------------------------------------*/
 
@@ -656,30 +657,36 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
     right: 0;
   }
 
-
-  .education, .experience, .projects, .contact {
+  .education,
+  .experience,
+  .projects,
+  .contact {
     margin: 6rem 0rem 0rem 12rem;
-}
+  }
   /* SKILLS */
 
   .skills .tech-skills {
     margin-right: 0;
     margin-left: 10rem;
   }
-  .projects .projects-card-wrapper { 
+  .projects .projects-card-wrapper {
     display: block;
   }
-  .pr-card-one , .pr-card-two , .pr-card-three {
+  .pr-card-one,
+  .pr-card-two,
+  .pr-card-three {
     margin-left: 10rem;
     margin-bottom: 5rem;
   }
-  
 }
-
 
 /* ------------------------------------------------ FOR ALL MOBILE SIZE FITS ------------------------------------------------ */
 @media (max-width: 450px) {
   /* HOME MAIN SECTION */
+
+  .home .content {
+    margin-left: 5rem;
+  }
 
   .home,
   .skills {
@@ -701,9 +708,9 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
   }
 
   /* ABOUT SECTIONS SKILLS */
-  .skills .content-skills , 
+  .skills .content-skills,
   .experience,
-  .projects ,
+  .projects,
   .education {
     margin-left: 5rem;
   }
@@ -719,20 +726,19 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
 
   .skills .content-skills p {
     font-size: 1.8rem;
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
   .skills .tech-skills {
     margin-right: 0rem;
-    margin-left: 7.5rem;
+    margin-left: 4rem;
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-
 
   /* EXPERIENCE  */
 
-  .experience , 
-  .projects ,
+  .experience,
+  .projects,
   .education {
     margin-top: 5rem;
   }
@@ -743,20 +749,25 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
   .experience .exp-sec-wrapper .timeline .content {
     width: 350px;
   }
-  .exp-sec-wrapper .image {
+  .experience .exp-sec-wrapper .image {
     width: 110%;
     margin-top: 5rem;
+    margin-left: 0px;
+  }
+
+  .experience .exp-sec-wrapper .image img {
+    margin-left: 1rem;
   }
 
   /* PROJECTS SECTION */
 
   .projects .projects-card-wrapper {
     display: block;
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
 
-  .projects .projects-card-wrapper .pr-card-one ,
-  .projects .projects-card-wrapper .pr-card-two ,
+  .projects .projects-card-wrapper .pr-card-one,
+  .projects .projects-card-wrapper .pr-card-two,
   .projects .projects-card-wrapper .pr-card-three {
     margin-bottom: 3rem;
     margin-left: 0rem;
@@ -765,7 +776,7 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
   /* EDUCATION SECTION */
 
   .education .edu-center {
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
   .edu-center .edu-details h2 {
     font-size: 1.8rem;
@@ -779,12 +790,16 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
 
   /* FOOTER SECTION */
 
-.footer-wrapper {
-  width: 520px;
-  height: 300px;
-}
-.footer .footer-wrapper .footer-title h1 {
-  font-size: 2rem;
-}
-}
+  .footer,
+  .footer-wrapper,
+  .footer-title,
+  .footer-content,
+  .footer-border,
+  .footer-end  {
+    width: 580px;
+  }
 
+  .footer .footer-wrapper .footer-title h1 {
+    font-size: 2rem;
+  }
+}
