@@ -78,18 +78,7 @@ header {
   background-color: var(--headerbar-bg);
   box-shadow: 0 1px 4px var(--voilet);
 }
-header .logo {
-  font-size: 2rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: #0e2431;
-}
-header .logo i {
-  font-size: 2.2rem;
-}
-header .logo:hover {
-  color: var(--logohover);
-}
+
 header .navbar ul {
   list-style: none;
   display: flex;
@@ -691,6 +680,7 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
 /* ------------------------------------------------ FOR ALL MOBILE SIZE FITS ------------------------------------------------ */
 @media (max-width: 450px) {
   /* HOME MAIN SECTION */
+
   .home,
   .skills {
     margin-top: 10rem;
