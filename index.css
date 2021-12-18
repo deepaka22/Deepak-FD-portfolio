@@ -438,8 +438,8 @@ header .navbar ul li a:hover {
 /*  ------------------------------------------------PROJECTS SECTION ENDS  ------------------------------------------------*/
 
 /*  ------------------------------------------------FOOTER SECTION STARTS ------------------------------------------------ */
-.footer , #contact {
-  width: 100vw;
+.footer {
+  width: 100%;
   height: 320px;
 }
 
@@ -686,22 +686,6 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
 
 }
 
-@media (max-width:320px) {
-  .home .content .socials .social-icons {
-      width:max-content ;
-  }
-
-  #header img {
-    width: 120px;
-    height: 100px;
-  }
-
-  .footer-wrapper {
-    height: inherit;
-  }
- 
-}
-
 @media (max-width: 1024px) {
   #header .navbar ul {
     flex: none;
@@ -841,8 +825,9 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
   .edu-center .edu-details p {
     font-size: 1rem;
   }
-  .footer-wrapper {
-    height: inherit;
+  .footer {
+    max-width: inherit;
+    height: 270px
   }
 
   .footer .footer-wrapper .footer-title h1 {
@@ -850,9 +835,25 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
   }
 }
 
-@media (max-width: 400px) {
-  .footer-wrapper {
+@media (max-width: 425px) {
+  .footer {
     width: 500px;
   }
 }
 
+@media (max-width: 400px) {
+  .footer {
+    width: 500px;
+  }
+}
+
+@media (max-width:320px) {
+  .home .content .socials .social-icons {
+      width:max-content ;
+  }
+
+  #header img {
+    width: 120px;
+    height: 100px;
+  } 
+}
