@@ -67,10 +67,10 @@ function refreshPage(){
 
 // Scroll Animations
 const scrlAnime = ScrollReveal({
-  origin: "left",
+  origin: "top",
   distance: "50px",
-  duration: 1200,
-  reset: true,
+  duration: 900,
+  reset: false,
 });
 
 /* SCROLL HOME */
