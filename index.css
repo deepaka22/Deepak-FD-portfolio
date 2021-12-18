@@ -673,6 +673,64 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
     margin-left: 10rem;
     margin-bottom: 5rem;
   }
+
+  .experience .timeline {
+    flex: none
+  }
+.experience .exp-sec-wrapper .image img {
+  width: 420px; 
+  height: 200px;
+  margin-left: 1rem;
+  margin: 2rem;
+}
+
+}
+
+@media (max-width:320px) {
+  .home .content .socials .social-icons {
+      width:max-content ;
+  }
+
+  #header img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .footer-wrapper {
+    height: inherit;
+  }
+ 
+}
+
+@media (max-width: 1024px) {
+  #header .navbar ul {
+    flex: none;
+  }
+
+  .skills .tech-skills {
+    grid-gap: 6rem;
+    margin: auto;
+  }
+
+  .experience .exp-sec-wrapper .timeline {
+      flex: 5;
+  }
+
+  .experience .timeline::after {
+    height: 305px;
+  }
+
+  .projects-card-wrapper {
+      margin-right: 2rem;
+  }
+
+  .projects .projects-card-wrapper .pr-card-one ,
+  .projects .projects-card-wrapper .pr-card-three ,
+  .projects .projects-card-wrapper .pr-card-two {
+    height: 400px;
+  }
+
+
 }
 
 /* ------------------------------------------------ FOR ALL MOBILE SIZE FITS ------------------------------------------------ */
@@ -728,6 +786,7 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
     margin-left: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
   }
 
   /* EXPERIENCE  */
@@ -782,19 +841,13 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
   .edu-center .edu-details p {
     font-size: 1rem;
   }
-
-  /* FOOTER SECTION */
-
-  .footer,
-  .footer-wrapper,
-  .footer-title,
-  .footer-content,
-  .footer-border,
-  .footer-end  {
-    width: 580px;
+  .footer-wrapper {
+    height: inherit;
   }
 
   .footer .footer-wrapper .footer-title h1 {
     font-size: 2rem;
   }
 }
+
+
