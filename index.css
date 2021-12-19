@@ -439,11 +439,15 @@ header .navbar ul li a:hover {
 
 /*  ------------------------------------------------FOOTER SECTION STARTS ------------------------------------------------ */
 .footer {
-  width: 100%;
-  height: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   background-color: var(--box-design);
   border-top: 4px solid var(--box-design);
 }
@@ -827,7 +831,7 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
   }
   .footer {
     max-width: inherit;
-    height: 270px
+    height: 320px
   }
 
   .footer .footer-wrapper .footer-title h1 {
@@ -837,13 +841,13 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
 
 @media (max-width: 425px) {
   .footer {
-    width: 500px;
+    width: 550px;
   }
 }
 
 @media (max-width: 400px) {
   .footer {
-    width: 500px;
+    width: 550px;
   }
 }
 
