@@ -4,13 +4,24 @@ $(document).ready(function () {
     $(".navbar").toggleClass("nav-toggle");
   });
 
-  // Smooth Scrolling 
+  // Smooth Scrolling
   $('a[href*="#"]').on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
-      {scrollTop: $($(this).attr("href")).offset().top,},
+      { scrollTop: $($(this).attr("href")).offset().top },
       500,
-      "linear");
+      "linear"
+    );
+  });
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+      document.title = "What made you to come here !?";
+      $("#favicon").attr("href", "assets/icons/rocket.png");
+    } else {
+      document.title = "come back soon";
+      $("#favicon").attr("href", "assets/icons/rocket.png");
+    }
   });
 });
 
@@ -30,14 +41,16 @@ function scroller() {
 
 // Start of Tawk.to Script
 
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/61a4b3e99099530957f71d53/1fllltit5';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
+var Tawk_API = Tawk_API || {},
+  Tawk_LoadStart = new Date();
+(function () {
+  var s1 = document.createElement("script"),
+    s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = "https://embed.tawk.to/61a4b3e99099530957f71d53/1fllltit5";
+  s1.charset = "UTF-8";
+  s1.setAttribute("crossorigin", "*");
+  s0.parentNode.insertBefore(s1, s0);
 })();
 
 // End of Tawk.to Script
@@ -61,9 +74,9 @@ function fadeOut() {
 
 window.onload = fadeOut; // Browser will call
 
-function refreshPage(){
+function refreshPage() {
   window.location.reload();
-} 
+}
 
 // Scroll Animations
 const scrlAnime = ScrollReveal({
