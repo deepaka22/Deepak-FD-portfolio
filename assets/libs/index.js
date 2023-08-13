@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible") {
-      document.title = "What made you to come here !?";
+      document.title = "Deepak Venkatesan";
       $("#favicon").attr("href", "assets/icons/rocket.png");
     } else {
       document.title = "come back soon";

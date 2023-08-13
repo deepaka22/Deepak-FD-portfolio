@@ -56,7 +56,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: var(--voilet);
+  /* background:#000000; */
 }
 html::-webkit-scrollbar-thumb {
 }
@@ -74,7 +74,7 @@ header {
   padding: 1.7rem 10%;
   height: 6.5rem;
   background-color: var(--headerbar-bg);
-  box-shadow: 0 1px 4px var(--voilet);
+  box-shadow: 0 1px 4px rgb(187, 172, 150);
 }
 
 header .navbar ul {
@@ -94,7 +94,7 @@ header .navbar ul li a {
   text-decoration: none;
   letter-spacing: 0.04rem;
   padding: 1rem 1.4rem;
-  transition: 0.6s;
+  transition: 0.4s;
   outline: none;
   border-radius: 2rem;
 }
@@ -103,6 +103,9 @@ header .navbar ul li a:hover {
   color: var(--bodybackground);
   background-color: var(--voilet);
   border: 1px solid var(--voilet);
+}
+.logo{
+  background-color: transparent;
 }
 /*  ------------------------------------------------HEADER BAR ENDS* ------------------------------------------------/
 
@@ -170,7 +173,7 @@ header .navbar ul li a:hover {
   margin-top: 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .home .btn:hover {
@@ -231,7 +234,7 @@ header .navbar ul li a:hover {
 
 .skills .tech-skills {
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   margin-right: 20rem;
 }
@@ -242,7 +245,7 @@ header .navbar ul li a:hover {
   background-color: var(--box-design);
   border-radius: 5rem;
   padding: 2rem;
-  transition: 0.6s;
+  transition: 0.20s;
 }
 .skills .tech-skills .tech-icon .icon-bg:hover {
   background-color: var(--voilet);
@@ -602,7 +605,7 @@ header .navbar ul li a:hover {
   width: 100%;
 }
 .loader-container.fade-out {
-  top: -120%;
+  top: -180%;
 }
 /* ------------------------------------------------------PRELOADER------------------------------------------------  */
 
@@ -647,7 +650,7 @@ If the screen lies inside 768 resolution apply this styles   TABLETS*/
     padding: 1rem;
     color: #fff;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid var(--bodybackground);
+    /* border-bottom: 0.5rem solid var(--bodybackground); */
   }
   .fa-times {
     transform: rotate(180deg);
